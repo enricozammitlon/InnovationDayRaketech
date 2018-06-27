@@ -1,6 +1,6 @@
 <?php
-header('header.html') ;
+include 'header.html';
 
-footer('footer.html') ;
+include 'footer.html';
 
  ?>
