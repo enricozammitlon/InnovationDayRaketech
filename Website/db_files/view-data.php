@@ -12,11 +12,12 @@ $sql="SELECT * FROM form_data";
 $result=pg_query($con, $sql) or die('Query failed');
 
 
-
-    foreach (pg_fetch_row($result) as $a)
+$i=0;
+    while ($i<1)
     {
-        $row=pg_fetch_array($a);
-        echo $row['emp_id'];
+        $row=pg_fetch_array($result);
+        echo $row["emp_id"];
+        $i++;
     }
 pg_close($con);
 
