@@ -1,6 +1,6 @@
 <?php include 'header.html' ?>
 <body>
-    <div id="content">
+    <div class="content">
         <form method="POST" action="sqlite-form-database.php" name="form1" >
             
             <p><label for="emp_id">Name:</label>
