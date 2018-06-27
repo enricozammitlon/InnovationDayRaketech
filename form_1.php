@@ -45,7 +45,7 @@
             
             <label for="box1">Would you recommend Raketech to your family and friends?</label><br>
             <input type="radio" name="box1" value=1>Yes
-            <input type="radio" name="box1" value=2>No<br>
+            <input type="radio" name="box1" value=2>No<br><br><br>
             
             <label for="q9">Would you like to add anything else? </label><br>
             <p><textarea id="q9" cols="70" rows="10" name="q9"></textarea></p>
