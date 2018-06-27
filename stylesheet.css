@@ -1,0 +1,83 @@
+@media only screen and (min-width: 400px){
+    
+    #title{
+        margin-top: -130px;
+        margin-left: 170px;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 45px;
+    }
+
+    #banner{
+    height: 170px;
+    }
+
+    main{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+        
+    header {
+    font-size: 35px;
+    }
+    
+    .descriptor{
+        font-size: 15px;
+        font-style: italic; 
+    }
+
+    #link{
+        margin-top: 70px;
+        margin-left: 90%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    #logo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    #title {
+    margin-top: 0px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 40px;
+    }
+    
+    #banner{
+    height: 270px;
+    }
+    
+    #link{
+    text-align: center;
+    margin-top: -10px;
+    }
+    
+    header {
+    font-size: 30px;
+    text-align: center;
+    }
+    
+    main{
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 20px;
+    }
+    
+    .descriptor{
+    display: none;
+    }
+    
+    #submit{
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+    }
+}
+
