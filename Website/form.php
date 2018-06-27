@@ -1,0 +1,54 @@
+<body>
+    <div id="form">
+        <main>
+            <form method="POST" action="sqlite-form-database.php" id="form1" name="form1" >
+                <div id="sec1">
+                    <p><label for="rate1">Name:</label>
+                    <input type="radio" name="rate1" id="rate1" placeholder="Please rate your relationship with your team" required></p>
+                    <p class="descriptor">Enter the name of your walk which will be used to identify the walk from other walks.</p>
+
+                    <p><label for="date">Date:</label>
+                    <input type="text" name="date" id="date" placeholder="YYYY-MM-DD" required></p>
+                    <p class="descriptor">Enter the date when the walk will commence.</p>
+
+                    <p><label for="time">Time:</label>
+                    <input type="text" name="time" id="time" placeholder="HH:MM:SS" required>
+                    <p class="descriptor">Enter the time when the event will start.</p>
+
+                    <p><label for="leader">Leader:</label>
+                    <input type="text" name="leader" id="leader" placeholder="Insert Run Name of Run Leader Here" required>
+                    <p class="descriptor">Enter the name of the person who will be leading the event.</p>
+
+                    <p><label for="meetingpoint">Meeting Point:</label>
+                    <input type="text" name="meetingpoint" id="meetingpoint" placeholder="Insert Meeting Point Here" required>
+                    <p class="descriptor">Enter the location name of where the walk event will start.</p>
+                </div>
+
+                <div id="sec2">
+                    <p><label for="meetingloc">Meeting Coordinates:</label>
+                    <input type="text" name="meetingloc" id="meetingloc" placeholder="Insert Meeting Coordinates Here" required>
+                    <p class="descriptor">Enter the longitude and latitude of where the walk event will start.</p>
+
+                    <p><label for="distance">Distance(km):</label>
+                    <input type="number" name="distance" id="distance" required>
+                    <p class="descriptor">Enter the total distance of the walk in kilometers.</p>
+
+                    <p><label for="route">Route:</label>
+                    <textarea cols="28" rows="5" name="route" id="route">Describe route here...</textarea>
+                    <p class="descriptor">Describe the route you will take during the walk.</p>
+
+                    <p><label for="notes">Notes:</label>
+                    <textarea cols="28" rows="5" name="notes" id="notes" required>Write any notes here...</textarea>
+                    <p class="descriptor">Write down any relevant information about the walk that members may need to know.</p>
+                </div>
+                <input type="hidden" name="status" id="status" value="Pending">
+                <input type="hidden" name="sessionID" value="ABCDEF012345">
+                <div id="sec3">
+                    <p>
+                    <input type="submit" id="submit" name="submit" value="Submit Application">
+                    </p>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
