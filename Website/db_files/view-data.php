@@ -6,8 +6,8 @@ $db = new SQLite3($databasename);
 
 $sql="SELECT id, emp_id, rate1, rate2, rate3, rate4, q1, q2, q3, q4, q5, q6, q7, q8, box1, q9 FROM form_data";
 
-$result = $db->query($sql) or die('Query failed');
-    while ($row = $result->fetchArray())
+$result=pg_query($con, $sql) or die('Query failed');
+    while ($row = pg_fetch_row($result))
     {
         echo
         "<div class=results>
