@@ -1,5 +1,6 @@
 <?php include 'header.html' ?>
 
+<body>
 
 <div class="content">
     <h2>Description of Website</h2>
