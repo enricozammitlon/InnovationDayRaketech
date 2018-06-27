@@ -16,6 +16,22 @@
   border-color:black; 
 }
 
+.footer-button{
+  margin:auto;
+  margin-left:0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 8px;
+  border: solid 1px #203f49;
+  color: white;
+  cursor: pointer;
+  border-color:black; 
+  padding-left: 20%;
+  padding-right: 20%;    
+}
+
+
 .faq-button a{
   text-decoration: none;
   color: #111111;
