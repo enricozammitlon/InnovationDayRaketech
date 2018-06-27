@@ -43,6 +43,13 @@
             <label for="q8">Where would you like to be in the organization two years from now?</label><br>
             <p><textarea id="q8" cols="70" rows="10" name="q8"></textarea></p>
             
+            <label for="box1">Would you recommend Raketech to your family and friends?</label><br>
+            <input type="radio" name="box1" value=1>Yes
+            <input type="radio" name="box1" value=2>No
+            
+            <label for="q9">Would you like to add anything else? </label><br>
+            <p><textarea id="q9" cols="70" rows="10" name="q9"></textarea></p>
+            
             <input type="submit" id="submit" name="submit" value="Submit Application">
         </form>
     </div>
