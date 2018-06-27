@@ -12,7 +12,7 @@ $sql="SELECT id, emp_id, rate1, rate2, rate3, rate4, q1, q2, q3, q4, q5, q6, q7,
 $result=pg_query($con, $sql) or die('Query failed');
     foreach (pg_fetch_row($result) as $row)
     {
-        echo $row
-        }
+        echo $row;
+    }
 
 ?>
