@@ -1,6 +1,6 @@
 <?php
-header( 'Location: /header.html' ) ;
+header('header.html') ;
 
-footer( 'Location: /footer.html' ) ;
+footer('footer.html') ;
 
  ?>
