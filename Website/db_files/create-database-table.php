@@ -9,6 +9,9 @@ $dbname="d59p9596i46fc";
 $user= "kpglhkjfgjqlly";
 $password= "512690195e545eb8afc2567aa9992944220bacf1222154d7ff2d386c6421c300";
 
+$query = "DROP TABLE IF EXISTS form_data"; 
+pg_query($con, $query) or die("Cannot execute query: $query\n");
+
 
 echo '<p><b>Creating new SQLite database table...</b></p>';
 
