@@ -28,7 +28,7 @@ pg_close($con);
         <br />
         <div id="graphDiv2"></div>
         <!--[if IE]><script src="excanvas.js"></script><![endif]-->
-        <script src="html5-canvas-bar-graph.js"></script>
+        <script src="resources/js/html5-canvas-bar-graph.js"></script>
         <script>(function () {
 
             function createCanvas(divName) {
@@ -43,6 +43,17 @@ pg_close($con);
                 return ctx;
             }
 
+            var ctx = createCanvas("graphDiv1");
+
+            var graph = new BarGraph(ctx);
+            graph.maxValue = 30;
+            graph.margin = 2;
+            graph.colors = ["#49a0d8", "#d353a0", "#ffc527", "#df4c27"];
+            graph.xAxisLabelArr = ["North", "East", "West", "South"];
+            setInterval(function () {
+                graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
+            }, 1000);
+
             var ctx2 = createCanvas("graphDiv2");
 
             var graph2 = new BarGraph(ctx2);
@@ -56,5 +67,4 @@ pg_close($con);
 
         }());</script>
     </body>
-
  <?php include 'footer.php' ?>
