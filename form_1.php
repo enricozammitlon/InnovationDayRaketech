@@ -16,7 +16,7 @@
             <div class="slider-section">
 
               <label for="rate1">Please rate your relationship with your team:</label><br>
-              <input id="ex1" data-slider-id="ex1Slider" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+              <input id="ex1" data-slider-id="ex1Slider" type="range" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
 
               <label for="rate2">Please rate your relationship with your chapter lead:</label><br>
               <p><input type="range" min="1" max="5" name="rate1" id="rate2" required></p>
