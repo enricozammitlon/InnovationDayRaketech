@@ -21,7 +21,7 @@ $i=0;
   while ($i<pg_num_rows($result))
   {
       $row=pg_fetch_array($result);
-      $total = $total + $row["rate1"];
+      $total1 = $total1 + $row["rate1"];
       $i++;
   }
 $value1 = round($total1 / pg_num_rows($result));
