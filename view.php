@@ -16,15 +16,15 @@ $value2 = 2;
 $value3 = 1;
 $value4 = 3;
 
-//$total1 = 0;
-//$i=0;
-//  while ($i<pg_num_rows($result))
-//  {
-//      $row=pg_fetch_array($result);
-//      $total1 = $total1 + $row["rate1"];
-//      $i++;
-//  }
-//$value1 = round($total1 / pg_num_rows($result));
+$total1 = 0;
+$i=0;
+  while ($i<pg_num_rows($result))
+  {
+      $row=pg_fetch_array($result);
+      $total1 = $total1 + $row["rate1"];
+      $i++;
+  }
+$value1 = round($total1 / pg_num_rows($result));
 
 ////--------------------------
 $i=0;
@@ -66,7 +66,6 @@ pg_close($con);
         var number2 = <?php echo $value2 ?>;
         var number3 = <?php echo $value3 ?>;
         var number4 = <?php echo $value4 ?>;
-        var number5 = <?php echo $value5 ?>;
 		graph.maxValue = 5;
 		graph.margin = 2;
         graph.width = 450;
