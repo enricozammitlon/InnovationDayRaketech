@@ -14,23 +14,17 @@ $value2 = 2;
 $value3 = 1;
 $value4 = 3;
 
-//$sql="SELECT * FROM form_data";
-//$result=pg_query($con, $sql) or die('Query failed');
-//
-//$i=0;
-//$numberArray = array();
-//  while ($i<pg_num_rows($result))
-//  {
-//      $row=pg_fetch_array($result);
-//      array_push($numberArray, $row["rate1"]);
-//  }
-//echo $numberArray;
-//pg_close($con);
-
-//$sql="SELECT id, emp_id, rate1, rate2, rate3, rate4, q1, q2, q3, q4, q5, q6, q7, q8, box1, q9 FROM form_data";
 $sql="SELECT * FROM form_data";
 $result=pg_query($con, $sql) or die('Query failed');
 
+$i=0;
+$numberArray = array();
+  while ($i<pg_num_rows($result))
+  {
+      $row=pg_fetch_array($result);
+      array_push($numberArray, $row["rate1"]);
+  }
+echo $numberArray;
 
 $i=0;
   while ($i<pg_num_rows($result))
