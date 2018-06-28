@@ -104,7 +104,7 @@
 				   <div class="container-contact3-form-btn">
              <button class="contact3-form-btn" id="submit" name="submit" value="SUBMIT">Submit</button>
            </div>
-
+           <?php include "view.php" ?>
         </form>
     </div>
 </body>
