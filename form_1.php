@@ -92,6 +92,8 @@
                   <input class="input-radio3" id="radio1" type="radio" name="box1" value="yes" checked="checked">Yes
                   <input class="input-radio3" id="radio2" type="radio" name="box1" value="no">No
                 </div>
+              </div>
+            </div>
 
 				   <div class="container-contact3-form-btn">
              <button class="contact3-form-btn" id="submit" name="submit" value="SUBMIT">Submit</button>
