@@ -23,6 +23,7 @@ $numberArray = array();
   {
       $row=pg_fetch_array($result);
       array_push($numberArray, $row["rate1"]);
+      $i++;
   }
 echo $numberArray;
 
