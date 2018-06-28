@@ -1,6 +1,6 @@
 <?php include 'header.html' ?>
 <body>
-  <div class="bg-contact3" style="background-image: url('resources/images/bg-01.jpg');">
+  <div class="bg-contact3">
 		<div class="container-contact3">
 			<div class="wrap-contact3">
 				<form class="contact3-form validate-form">
