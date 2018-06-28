@@ -23,9 +23,7 @@ $i=0;
 pg_close($con);
 
 ?>
-    <body>
-	<div id="graphDiv1"></div>
-	<br />
+<body>
 	<div id="graphDiv2"></div>
 	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
 	<script src="resources/js/html5-canvas-bar-graph.js"></script>
