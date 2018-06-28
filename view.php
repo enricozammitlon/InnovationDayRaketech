@@ -62,7 +62,7 @@ pg_close($con);
         
     <div class="bg-contact3">
     <div class="container-contact3">
-    <div class="wrap-cotact3">
+    <div class="wrap-contact3">
         <form class="contact3-form validate-form" method="post" action="website/db_files/view-data.php" name="view1">
             
             <div class="wrap-input3 validate-input">
