@@ -11,10 +11,11 @@
 
          <p>Your name: <input type="text" name="name" /></p>
          <p>Your age: <input type="text" name="age" /></p>
-         <p><input type="submit" /></p>
+        <!-- <p><input type="submit" /></p>-->
+         <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">Submit7</button>
         </form>
 
-<!--  
+<!--
 				<form class="contact3-form validate-form">
 
 
