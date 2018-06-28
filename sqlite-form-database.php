@@ -14,7 +14,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+//if($_SERVER['REQUEST_METHOD'] == 'POST') {
     foreach ($_POST as $key => $value)
     {
         $webdata[$key] = $value;
@@ -45,10 +45,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     pg_query($con, $sql) or die('Insert values into table failed');
     pg_close($con);
 
-
+/*
 }else{
   ?>
     Welcome <?php echo "$_POST['emp_id']"; ?><br>
     <p>Form is empty</p><?php
 }
+*/
 ?>
