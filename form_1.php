@@ -82,7 +82,7 @@
             </div>
 
 				   <div class="container-contact3-form-btn">
-             <button class="contact3-form-btn" id="submit" name="submit" value="SUBMIT"></button>
+             <button class="contact3-form-btn" id="submit" name="submit" value="SUBMIT">Submit</button>
            </div>
 
         </form>
