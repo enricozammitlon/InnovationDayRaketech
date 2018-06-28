@@ -23,7 +23,6 @@ error_reporting(E_ALL);
     echo "<p>Preparing form to be posted to the database...</p>";
 //$columns = '"id" INTEGER PRIMARY KEY NOT NULL , "emp_id" TEXT, "rate1" INTEGER, "rate2" INTEGER, "rate3" INTEGER, "rate4" INTEGER, "q1" TEXT, "q2" TEXT, "q3" TEXT , "q4" TEXT, "q5" TEXT, "q6" TEXT, "q7" TEXT, "q8" TEXT, "box1" INTEGER, "q9" TEXT';
 
-    $id = 5;
     $emp_id = $webdata['emp_id'];
     $rate1 = $webdata['rate1'];
     $rate2 = $webdata['rate2'];
@@ -39,8 +38,8 @@ error_reporting(E_ALL);
     $q8 = $webdata['q8'];
     $q9 = $webdata['q9'];
     $box1 = $webdata['box1'];
-    pg_query_params($con,"INSERT INTO form_data VALUES ($1,$2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14,$15, $16)",
-     Array($id,$emp_id, $rate1, $rate2, $rate3, $rate4, $q1, $q2, $q3, $q4, $q5, $q6, $q7, $q8,$box1, $q9)) or die('Insert values into table failed');
+    pg_query_params($con,"INSERT INTO form_data VALUES ($1,$2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14,$15)",
+     Array($emp_id, $rate1, $rate2, $rate3, $rate4, $q1, $q2, $q3, $q4, $q5, $q6, $q7, $q8,$box1, $q9)) or die('Insert values into table failed');
     pg_close($con);
 
 /*
