@@ -23,53 +23,38 @@ $i=0;
 pg_close($con);
 
 ?>
+    <body>
+        <div id="graphDiv1"></div>
+        <br />
+        <div id="graphDiv2"></div>
+        <!--[if IE]><script src="excanvas.js"></script><![endif]-->
+        <script src="html5-canvas-bar-graph.js"></script>
+        <script>(function () {
 
-   <body>
-      <div id="wrapper">
-         <div class="chart">
-            <h3>Population of endangered species from 2012 to 2016</h3>
-            <table id="data-table" border="1" cellpadding="10" cellspacing="0"
-            summary="The effects of the zombie outbreak on the populations
-            of endangered species from 2012 to 2016">
-               <caption>Population in thousands</caption>
-               <thead>
-                  <tr>
-                     <td>&nbsp;</td>
-                     <th scope="col">2012</th>
-                     <th scope="col">2013</th>
-                     <th scope="col">2014</th>
-                     <th scope="col">2015</th>
-                     <th scope="col">2016</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <th scope="row">Carbon Tiger</th>
-                     <td>4080</td>
-                     <td>6080</td>
-                     <td>6240</td>
-                     <td>3520</td>
-                     <td>2240</td>
-                  </tr>
-                  <tr>
-                     <th scope="row">Blue Monkey</th>
-                     <td>5680</td>
-                     <td>6880</td>
-                     <td>6240</td>
-                     <td>5120</td>
-                     <td>2640</td>
-                  </tr>
-                  <tr>
-                     <th scope="row">Tanned Zombie</th>
-                     <td>1040</td>
-                     <td>1760</td>
-                     <td>2880</td>
-                     <td>4720</td>
-                     <td>7520</td>
-                  </tr>
-               </tbody>
-            </table>
-         </div>
-      </div>
-   </body>
+            function createCanvas(divName) {
+
+                var div = document.getElementById(divName);
+                var canvas = document.createElement('canvas');
+                div.appendChild(canvas);
+                if (typeof G_vmlCanvasManager != 'undefined') {
+                    canvas = G_vmlCanvasManager.initElement(canvas);
+                }	
+                var ctx = canvas.getContext("2d");
+                return ctx;
+            }
+
+            var ctx2 = createCanvas("graphDiv2");
+
+            var graph2 = new BarGraph(ctx2);
+            graph2.margin = 2;
+            graph2.width = 450;
+            graph2.height = 150;
+            graph2.xAxisLabelArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"];
+            setInterval(function () {
+                graph2.update([Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20]);
+            }, 1500);
+
+        }());</script>
+    </body>
+
  <?php include 'footer.php' ?>
