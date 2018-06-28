@@ -16,33 +16,18 @@ foreach ($_POST as $key => $value)
 $emp_id = $webdata['emp_id'];
 
 $result=pg_query_params($con,"SELECT * FROM form_data WHERE (emp_id=$1)",Array($emp_id)) or die('Insert values into table failed');
-
+/*
 $i=0;
 while ($i<pg_num_rows($result))
 {
+*/
     $row=pg_fetch_array($result);
-    echo $row["emp_id"];
+
+    /*echo $row["emp_id"];
     $i++;
-}
+}*/
 
 
-<div class="bg-contact3">
-<div class="container-contact3">
-<div class="wrap-contact3">
-    <form class="contact3-form validate-form" method="post" action="website/db_files/view-data.php" name="input2">
-        <span class="contact3-form-title">View Forms</span>
-        <div class="wrap-input3">
-            <p><input class="input3" type="text" name="emp_id" placeholder="Insert Employee ID Here"></p>
-            <span class="focus-input3"></span>
-        </div>
-        <div class="container-contact3-form-btn">
-             <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">View Submitted Form</button>
-        </div>
-        <div id="generated-form"></div>
-    </form>
-</div>
-</div>
-</div>
 
 <div class="bg-contact3">
 <div class="container-contact3">
@@ -51,16 +36,16 @@ while ($i<pg_num_rows($result))
         <div class="slider-section">
 
           <label for="rate1">Please rate your relationship with your team: <span id="status1"></span></label><br>
-          <p><input type="range" min="1" max="5" name="rate1" id="rate1" required></p>
+          <p><input type="range" min="1" max="5" name="rate1" id="rate1" value=$row['rate1']></p>
 
           <label for="rate2">Please rate your relationship with your chapter lead: <span id="status2"></span></label><br>
-          <p><input type="range" min="1" max="5" name="rate2" id="rate2" required></p>
+          <p><input type="range" min="1" max="5" name="rate2" id="rate2" value=$row['rate2']></p>
 
           <label for="rate3">Do you have all the resources that you needed? <span id="status3"></span></label><br>
-          <p><input type="range" min="1" max="5" name="rate3" id="rate3" required></p>
+          <p><input type="range" min="1" max="5" name="rate3" id="rate3" value=$row['rate3']></p>
 
           <label for="rate4">How would you rate the organisation? <span id="status4"></span></label><br>
-          <p><input type="range" min="1" max="5" name="rate4" id="rate4" required></p>
+          <p><input type="range" min="1" max="5" name="rate4" id="rate4" value=$row['rate4']></p>
         </div>
 
 
