@@ -11,7 +11,7 @@ $i=0;
   while ($i<pg_num_rows($result))
   {
       $row=pg_fetch_array($result);
-      echo "<p>$row["emp_id"]</p>";
+      echo '<p>$row["emp_id"]</p>';
       $i++;
   }
 pg_close($con);
