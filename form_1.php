@@ -100,7 +100,8 @@
 </body>
 
 <script>
-function converter(p1) {
+function converter(p2) {
+  p1=Number(p2);
   switch(p1) {
   case 1:
       return "Poor";
