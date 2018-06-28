@@ -8,7 +8,7 @@
             Stay Interview
           </span>
 
-        <form method="POST" action="sqlite-form-database.php" name="form1" >
+        <form method="POST" action="Website/db_files/sqlite-form-database.php" name="form1" >
           <div class="wrap-input3 validate-input">
             <input class="input3" type="text" name="emp_id" id="emp_id" placeholder="Insert Your ID Here" required></p>
           </div>
@@ -102,7 +102,7 @@
             </div>
 -->
 				   <div class="container-contact3-form-btn">
-             <button class="contact3-form-btn" id="submit" type="submit" name="submit">Submit</button>
+             <button class="contact3-form-btn" id="submit" type="submit" name="submit">Submit2</button>
            </div>
            <?php include "Website/db_files/sqlite-form-database.php" ?>
         </form>
