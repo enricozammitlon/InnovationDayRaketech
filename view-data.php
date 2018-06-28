@@ -23,7 +23,7 @@ foreach ($_POST as $key => $value)
 $emp_id = $webdata['emp_id'];
 echo $emp_id;
 
-$result=pg_query_params($con,"SELECT * FROM form_data WHERE emp_id=$1", Array($emp_id)) or die('Insert values into table failed');
+$result=pg_query_params($con,"SELECT * FROM form_data WHERE [emp_id=$1]", Array($emp_id)) or die('Insert values into table failed');
 
 /*
 pg_query_params($con,"INSERT INTO form_data(emp_id, rate1,rate2,rate3,rate4,q1,q2,q3,q4,q5,q6,q7,q8,box1,q9) VALUES ($1,$2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14,$15)",
