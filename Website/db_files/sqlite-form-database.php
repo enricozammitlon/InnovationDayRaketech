@@ -47,13 +47,13 @@ if(isset($_POST['submit'])) {
 
 
 }else{
-  echo"
+  ?>
     <html>
     <body>
 
     Welcome <?php echo $_POST['emp_id']; ?><br>
     </body>
     </html> "
-    echo "<p>Form is empty</p>";
+    echo "<p>Form is empty</p>";<?php
 }
 ?>
