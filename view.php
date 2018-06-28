@@ -33,7 +33,6 @@ pg_close($con);
 	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
 	<script src="resources/js/html5-canvas-bar-graph.js"></script>
 	<script>
-    var number1 = 2;  
     (function () {
 	
 		function createCanvas(divName) {
@@ -51,6 +50,7 @@ pg_close($con);
 		var ctx = createCanvas("graphDiv1");
 		
 		var graph = new BarGraph(ctx);
+        var number1 = 2;  
 		graph.maxValue = 5;
 		graph.margin = 2;
         graph.width = 450;
