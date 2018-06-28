@@ -14,8 +14,11 @@
           </div>
 
             <div class="slider-section">
+              <input type="text" data-slider-ticks="[1, 2, 3, 4, 5]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["Bad", "Not Good", "Neutral", "Good", "Very Good"]'/>
+
               <label for="rate1">Please rate your relationship with your team:</label><br>
-              <p><input type="range" min="1" max="5" name="rate1" id="rate1" required></p>
+              <input type="text" name="rate1" id="rate1" data-slider-ticks="[1, 2, 3, 4, 5]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["Bad", "Not Good", "Neutral", "Good", "Very Good"]' required/>
+
 
               <label for="rate2">Please rate your relationship with your chapter lead:</label><br>
               <p><input type="range" min="1" max="5" name="rate1" id="rate2" required></p>
@@ -97,4 +100,12 @@
         </form>
     </div>
 </body>
+
+<script>
+  .slider({
+      ticks: [1, 2, 3, 4, 5],
+      ticks_labels: ['Bad', 'Not Good', 'Neutral', 'Good', 'Very Good'],
+      ticks_snap_bounds: 1
+  });
+</script>
 <?php include 'footer.html' ?>
