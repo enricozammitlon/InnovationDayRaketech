@@ -13,7 +13,7 @@
   border: solid 1px #203f49;
   color: white;
   cursor: pointer;
-  border-color:black; 
+  border-color:black;
 }
 
 .footer-button{
@@ -26,9 +26,9 @@
   border: solid 1px #203f49;
   color: white;
   cursor: pointer;
-  border-color:black; 
+  border-color:black;
   padding-left: 30%;
-  padding-right: 30%;    
+  padding-right: 30%;
 }
 
 
@@ -54,4 +54,58 @@
     padding-left: 30%;
     padding-right: 30%;
     text-align: justify;
+}
+
+
+input[type=text], textarea {
+  width: 468px;
+  min-height: 50px;
+  border: 0;
+  background: #f0f0f0;
+  outline: 1px solid #c8c8c8;
+  padding-left: 12px;
+}
+
+input[type=text]:focus, textarea:focus {
+  border: 0;
+}
+
+textarea {
+  width: 456px;
+  height: 300px;
+  padding: 12px;
+}
+
+select {
+  -moz-appearance:normal;
+  -webkit-appearance:button;
+  width: 480px;
+  height: 50px;
+  border: 0;
+  outline: 1px solid #c8c8c8;
+  background: #f0f0f0;
+  cursor: pointer;
+  cursor: hand;
+  color: #999999;
+  border-radius: 0;
+  padding-left: 12px;
+}
+
+input[type=submit] {
+  -moz-appearance:button;
+  -webkit-appearance:button;
+  width: 480px;
+  height: 50px;
+  border: 0;
+  outline: 1px solid #2e76ff;
+  background: #3f81ff;
+  cursor: pointer;
+  cursor: hand;
+  color: #fff;
+  border-radius: 0;
+}
+
+input[type=submit]:hover {
+  background: #2e76ff;
+  outline:1px solid #1d6bff;
 }
