@@ -18,39 +18,16 @@ $i=0;
   {
       $row=pg_fetch_array($result);
       $total1 = $total1 + $row["rate1"];
+      $total2 = $total2 + $row["rate2"];
+      $total3 = $total3 + $row["rate3"];
+      $total4 = $total4 + $row["rate4"];
       $i++;
   }
 $value1 = round($total1 / pg_num_rows($result));
-
-$total2 = 0;
-$j=0;
-  while ($j<pg_num_rows($result))
-  {
-      $row=pg_fetch_array($result);
-      $total2 = $total2 + $row["rate2"];
-      $j++;
-  }
 $value2 = round($total2 / pg_num_rows($result));
-
-$total3 = 0;
-$k=0;
-  while ($k<pg_num_rows($result))
-  {
-      $row=pg_fetch_array($result);
-      $total3 = $total3 + $row["rate3"];
-      $k++;
-  }
 $value3 = round($total3 / pg_num_rows($result));
-
-$total4 = 0;
-$l=0;
-  while ($l<pg_num_rows($result))
-  {
-      $row=pg_fetch_array($result);
-      $total4 = $total4 + $row["rate4"];
-      $l++;
-  }
 $value4 = round($total4 / pg_num_rows($result));
+
 
 ////--------------------------
 $i=0;
@@ -108,7 +85,7 @@ pg_close($con);
     <div class="container-contact3">
     <div class="wrap-contact3">
        <form class="contact3-form validate-form" method="post" action="view-data.php" name="input2">
-           <span class="contact3-form-title">Viewww Forms</span>
+           <span class="contact3-form-title">View Forms</span>
            <div class="wrap-input3">
                <p><input class="input3" type="text" name="emp_id" placeholder="Insert Employee ID Here"></p>
                <span class="focus-input3"></span>
