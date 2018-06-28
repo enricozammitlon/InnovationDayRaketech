@@ -23,32 +23,32 @@ $i=0;
 $value1 = round($total1 / pg_num_rows($result));
 
 $total2 = 0;
-$i=0;
-  while ($i<pg_num_rows($result))
+$j=0;
+  while ($j<pg_num_rows($result))
   {
       $row=pg_fetch_array($result);
       $total2 = $total2 + $row["rate2"];
-      $i++;
+      $j++;
   }
 $value2 = round($total2 / pg_num_rows($result));
 
 $total3 = 0;
-$i=0;
-  while ($i<pg_num_rows($result))
+$k=0;
+  while ($k<pg_num_rows($result))
   {
       $row=pg_fetch_array($result);
       $total3 = $total3 + $row["rate3"];
-      $i++;
+      $k++;
   }
 $value3 = round($total3 / pg_num_rows($result));
 
 $total4 = 0;
-$i=0;
-  while ($i<pg_num_rows($result))
+$l=0;
+  while ($l<pg_num_rows($result))
   {
       $row=pg_fetch_array($result);
       $total4 = $total4 + $row["rate4"];
-      $i++;
+      $l++;
   }
 $value4 = round($total4 / pg_num_rows($result));
 
