@@ -100,9 +100,31 @@
 </body>
 
 <script>
+function converter(p1) {
+  switch(p1) {
+  case 1:
+      return "Poor";
+      break;
+  case 2:
+      return "Not good";
+      break;
+  case 3:
+      return "Neutral";
+      break;
+  case 4:
+      return "Good";
+      break;
+  case 5:
+      return "Excellent";
+      break;
+  default:
+      return "Neutral";
+  }
+}
+
 var slider1 = document.getElementById("rate1");
 var output1 = document.getElementById("status1");
-output1.innerHTML = slider1.value;
+output1.innerHTML = converter(slider1.value);
 
 slider1.oninput = function() {
   output1.innerHTML = this.value;
@@ -110,14 +132,14 @@ slider1.oninput = function() {
 
 var slider2 = document.getElementById("rate2");
 var output2 = document.getElementById("status2");
-output2.innerHTML = slider2.value;
+output2.innerHTML = converter(slider2.value);
 
 slider2.oninput = function() {
   output2.innerHTML = this.value;
 }
 var slider3 = document.getElementById("rate3");
 var output3 = document.getElementById("status3");
-output3.innerHTML = slider3.value;
+output3.innerHTML = converter(slider3.value);
 
 slider3.oninput = function() {
   output3.innerHTML = this.value;
@@ -125,11 +147,12 @@ slider3.oninput = function() {
 
 var slider4 = document.getElementById("rate4");
 var output4 = document.getElementById("status4");
-output4.innerHTML = slider4.value;
+output4.innerHTML = converter(slider4.value);
 
 slider4.oninput = function() {
   output4.innerHTML = this.value;
 }
+
 </script>
 
 <?php include 'footer.html' ?>
