@@ -11,9 +11,6 @@ $con = pg_connect("host=$host dbname=$dbname user=$user password=$password")
 //$sql="SELECT id, emp_id, rate1, rate2, rate3, rate4, q1, q2, q3, q4, q5, q6, q7, q8, box1, q9 FROM form_data";
 $sql="SELECT * FROM form_data";
 $result=pg_query($con, $sql) or die('Query failed');
-$value2 = 2;
-$value3 = 1;
-$value4 = 3;
 
 $total1 = 0;
 $i=0;
@@ -24,6 +21,36 @@ $i=0;
       $i++;
   }
 $value1 = round($total1 / pg_num_rows($result));
+
+$total2 = 0;
+$i=0;
+  while ($i<pg_num_rows($result))
+  {
+      $row=pg_fetch_array($result);
+      $total2 = $total2 + $row["rate2"];
+      $i++;
+  }
+$value2 = round($total2 / pg_num_rows($result));
+
+$total3 = 0;
+$i=0;
+  while ($i<pg_num_rows($result))
+  {
+      $row=pg_fetch_array($result);
+      $total3 = $total3 + $row["rate3"];
+      $i++;
+  }
+$value3 = round($total3 / pg_num_rows($result));
+
+$total4 = 0;
+$i=0;
+  while ($i<pg_num_rows($result))
+  {
+      $row=pg_fetch_array($result);
+      $total4 = $total4 + $row["rate4"];
+      $i++;
+  }
+$value4 = round($total4 / pg_num_rows($result));
 
 ////--------------------------
 $i=0;
@@ -61,19 +88,18 @@ pg_close($con);
 		var ctx = createCanvas("graphDiv1");
 
 		var graph = new BarGraph(ctx);
-        var number1 = <?php echo $value1?>;
-        var number2 = <?php echo $value2?>;
-        var number3 = <?php echo $value3?>;
-        var number4 = <?php echo $value4?>;
-        var number5 = <?php echo $value5?>;
+        var number1 = <?php echo $value1 ?>;
+        var number2 = <?php echo $value2 ?>;
+        var number3 = <?php echo $value3 ?>;
+        var number4 = <?php echo $value4 ?>;
 		graph.maxValue = 5;
 		graph.margin = 2;
         graph.width = 450;
 		graph.height = 300;
-		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
-		graph.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4", "Box1-Yes", "Box1-No"];
+		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
+		graph.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4"];
 		setInterval(function () {
-			graph.update([number1, 5, 5, 5, 5, 5]);
+			graph.update([number1, number2, number3, number4]);
 		}, 1000);
 
 	}());</script>
