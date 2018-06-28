@@ -25,7 +25,7 @@ pg_close($con);
 ?>
 <body>
     <div class="graph-content">
-        <span class="contact3-form-title">Leave Interview Average Rating Data</span>
+        <h1>Leave Interview Average Rating Data</h1>
         <div id="graphDiv1"></div>
     </div>
 	<br />
@@ -62,10 +62,15 @@ pg_close($con);
         
     <div class="bg-contact3">
     <div class="container-contact3">
-    <div class="wrap-cotnact3">
+    <div class="wrap-cotact3">
         <form class="contact3-form validate-form" method="post" action="website/db_files/view-data.php" name="view1">
-
-            <label for="emp_id" class="contact3-form-title">Input Employee ID Here:</label>
+            
+            <div class="wrap-input3 validate-input">
+                <label for="emp_id" class="contact3-form-title">Input Employee ID Here:</label>
+                <p><textarea class="input1" id="q2" cols="70" rows="10" name="q2"></textarea></p>
+                <span class="focus-input3"></span>
+            </div>
+            
             <div class="container-contact3-form-btn">
                  <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">View Submitted Form</button>
             </div>
