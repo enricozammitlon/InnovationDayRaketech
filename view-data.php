@@ -39,7 +39,7 @@ while ($i<pg_num_rows($result))
 {
 */
 $row=pg_fetch_array($result);
-echo $row[1];
+echo $row;
 
     /*echo $row["emp_id"];
     $i++;
