@@ -18,7 +18,7 @@ $sql="SELECT * FROM form_data";
 $result=pg_query($con, $sql) or die('Query failed');
 
 $i=0;
-$numberArray = array();
+$numberArray = array(1, 2);
   while ($i<pg_num_rows($result))
   {
       $row=pg_fetch_array($result);
