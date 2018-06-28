@@ -85,11 +85,13 @@
               </div>
 
             </div>
-            <div class="radio-section">
-              <label for="box1">Would you recommend Raketech to your family and friends?</label><br>
-              <input type="radio" name="box1" value=1>Yes
-              <input type="radio" name="box1" value=2>No
-            </div>
+            <div class="wrap-contact3-form-radio">
+  						<div class="contact3-form-radio m-r-42">
+                <div class="radio-section">
+                  <label for="box1">Would you recommend Raketech to your family and friends?</label><br>
+                  <input class="input-radio3" id="radio1" type="radio" name="box1" value="yes" checked="checked">Yes
+                  <input class="input-radio3" id="radio2" type="radio" name="box1" value="no">No
+                </div>
 
 				   <div class="container-contact3-form-btn">
              <button class="contact3-form-btn" id="submit" name="submit" value="SUBMIT">Submit</button>
