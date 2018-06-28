@@ -50,11 +50,11 @@ pg_close($con);
 		graph.margin = 2;
         graph.width = 450;
 		graph.height = 150;
-		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
-		graph.xAxisLabelArr = ["North", "East", "West", "South", "Test"];
-		setInterval(function () {
-			graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
-		}, 1000);
+		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
+		graph.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4", "Box1-Yes", "Box1-No"];
+		function () {
+			graph.update([5, 5, 5, 5, 5, 5]);
+		}
 
 	}());</script>
 </body>
