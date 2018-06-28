@@ -103,7 +103,7 @@
 
 
 				   <div class="container-contact3-form-btn">
-             <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">Submit7</button>
+             <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">Submit</button>
            </div>
         </form>
       </div>
