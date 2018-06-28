@@ -43,26 +43,15 @@ pg_close($con);
                 return ctx;
             }
 
-            var ctx = createCanvas("graphDiv1");
-
-            var graph = new BarGraph(ctx);
-            graph.maxValue = 30;
-            graph.margin = 2;
-            graph.colors = ["#49a0d8", "#d353a0", "#ffc527", "#df4c27"];
-            graph.xAxisLabelArr = ["North", "East", "West", "South"];
-            setInterval(function () {
-                graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
-            }, 1000);
-
             var ctx2 = createCanvas("graphDiv2");
 
             var graph2 = new BarGraph(ctx2);
             graph2.margin = 2;
             graph2.width = 450;
             graph2.height = 150;
-            graph2.xAxisLabelArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"];
+            graph2.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4", "Box1-Yes", "Box2-No"];
             setInterval(function () {
-                graph2.update([Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20]);
+                graph2.update([Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Maths.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20]);
             }, 1500);
 
         }());</script>
