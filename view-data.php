@@ -1,3 +1,5 @@
+<?php include 'header.html' ?>
+
 <?php
 $mytable = form_data;
 $host="ec2-54-228-251-254.eu-west-1.compute.amazonaws.com" ;
@@ -127,3 +129,5 @@ while ($i<pg_num_rows($result))
 
 <?php
 pg_close($con);?>
+
+<?php include 'footer.html' ?>
