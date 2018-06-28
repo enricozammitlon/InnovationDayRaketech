@@ -18,8 +18,9 @@ $value4 = 3;
 
 $i=0;
 $numberArray = array(1, 2);
-foreach($numberArray['data'] as $result) {
-    echo $numberArray['type'];
+foreach($numberArray as $i => $item) {
+    echo $numberArray[$i];
+    // $array[$i] is same as $item
 }
 
 $i=0;
