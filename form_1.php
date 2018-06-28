@@ -8,9 +8,9 @@
             Stay Interview
           </span>
 
-        <form method="POST" action="sqlite-form-database.php" name="form1" >
+        <form method="POST" action="Website/db_files/sqlite-form-database.php" name="form1" >
           <div class="wrap-input3 validate-input">
-            <input class="input3" type="text" name="emp_id" id="emp_id" placeholder="Insert Your ID Here" required></p>
+            <input class="input3" type="text" name="emp_id" id="emp_id" placeholder="Insert Your ID Here"></p>
           </div>
 <!--
             <div class="slider-section">
@@ -100,11 +100,13 @@
                 </div>
               </div>
             </div>
+
+<button class="contact3-form-btn" id="submit" type="submit" name="submit2" value="submit">Submit2</button>
 -->
 				   <div class="container-contact3-form-btn">
-             <input type="submit" value="submit2"><button class="contact3-form-btn" id="submit" type="submit" name="submit2" value="submit">Submit2</button>
+             <input type="submit">
            </div>
-           <?php include "Website/db_files/sqlite-form-database.php" ?>
+           <?php //include "Website/db_files/sqlite-form-database.php" ?>
         </form>
     </div>
 </body>
