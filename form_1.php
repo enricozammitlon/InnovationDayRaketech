@@ -15,16 +15,16 @@
 
             <div class="slider-section">
 
-              <label for="rate1">Please rate your relationship with your team:</label><br>
-              <input id="ex1" data-slider-id="ex1Slider" type="range" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+              <label for="rate1">Please rate your relationship with your team: <span id="status1"></span></p></label><br>
+              <p><input type="range" min="1" max="5" name="rate1" id="rate1" required></p>
 
-              <label for="rate2">Please rate your relationship with your chapter lead:</label><br>
+              <label for="rate2">Please rate your relationship with your chapter lead: <span id="status2"></span></label><br>
               <p><input type="range" min="1" max="5" name="rate1" id="rate2" required></p>
 
-              <label for="rate3">Do you have all the resources that you needed?</label><br>
+              <label for="rate3">Do you have all the resources that you needed? <span id="status3"></span></label><br>
               <p><input type="range" min="1" max="5" name="rate1" id="rate3" required></p>
 
-              <label for="rate4">How would you rate the organisation? </label><br>
+              <label for="rate4">How would you rate the organisation? <span id="status4"></span></label><br>
               <p><input type="range" min="1" max="5" name="rate1" id="rate4" required></p>
             </div>
 
@@ -100,10 +100,36 @@
 </body>
 
 <script>
-  .slider({
-      ticks: [1, 2, 3, 4, 5],
-      ticks_labels: ['Bad', 'Not Good', 'Neutral', 'Good', 'Very Good'],
-      ticks_snap_bounds: 1
-  });
+var slider1 = document.getElementById("rate1");
+var output1 = document.getElementById("status1");
+output1.innerHTML = slider1.value;
+
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+}
+
+var slider2 = document.getElementById("rate2");
+var output2 = document.getElementById("status2");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+var slider3 = document.getElementById("rate3");
+var output3 = document.getElementById("status3");
+output3.innerHTML = slider3.value;
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+
+var slider4 = document.getElementById("rate4");
+var output4 = document.getElementById("status4");
+output4.innerHTML = slider4.value;
+
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
 </script>
+
 <?php include 'footer.html' ?>
