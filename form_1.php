@@ -9,7 +9,7 @@
           </span>
 
         <form method="post" action="sqlite-form-database.php" name="form1" >
-          <div class="wrap-input3 validate-input">
+          <div class="wrap-input3">
             <input class="input3" type="text" name="emp_id"></p>
           </div>
 <!--
@@ -100,11 +100,11 @@
                 </div>
               </div>
             </div>
-
-<button class="contact3-form-btn" id="submit" type="submit" name="submit2" value="submit">Submit2</button>
 -->
+
 				   <div class="container-contact3-form-btn">
-             <input type="submit">
+             <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">Submit7</button>
+             <!--<input type="submit">-->
            </div>
            <?php //include "Website/db_files/sqlite-form-database.php"; ?>
         </form>
