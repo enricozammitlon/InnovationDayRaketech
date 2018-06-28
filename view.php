@@ -16,15 +16,20 @@ $value2 = 2;
 $value3 = 1;
 $value4 = 3;
 
-$total = 0;
-$row=pg_fetch_array($result);
-$row["rate1"]
-$numberArray1 = array(1, 2);
-foreach($numberArray as $i => $item) {
-    echo $numberArray[$i];
-    
-}
-//--------------------------
+//$total = 0;
+//$i=0;
+//  while ($i<pg_num_rows($result))
+//  {
+//      $row=pg_fetch_array($result);
+//      echo $row["rate1"];
+//      $i++;
+//  }
+//$numberArray1 = array(1, 2);
+//foreach($numberArray as $i => $item) {
+//    echo $numberArray[$i];
+//    
+//}
+////--------------------------
 $i=0;
   while ($i<pg_num_rows($result))
   {
