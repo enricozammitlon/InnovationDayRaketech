@@ -1,6 +1,4 @@
 <?php include 'header.html' ?>
-<?php include "Website/db_files/sqlite-form-database.php" ?>
-
 <body>
   <div class="bg-contact3">
 		<div class="container-contact3">
@@ -104,8 +102,9 @@
             </div>
 -->
 				   <div class="container-contact3-form-btn">
-             <input type="submit"><button class="contact3-form-btn" id="submit" type="submit" name="submit" value="submit">Submit2</button>
+             <input type="submit" value="submit2"><button class="contact3-form-btn" id="submit" type="submit" name="submit2" value="submit">Submit2</button>
            </div>
+           <?php include "Website/db_files/sqlite-form-database.php" ?>
         </form>
     </div>
 </body>
