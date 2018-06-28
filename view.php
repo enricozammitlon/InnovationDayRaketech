@@ -53,7 +53,7 @@ pg_close($con);
 		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
 		graph.xAxisLabelArr = ["North", "East", "West", "South", "Test"];
 		setInterval(function () {
-			graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
+			graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
 		}, 1000);
 
 	}());</script>
