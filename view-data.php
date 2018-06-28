@@ -35,10 +35,10 @@ while ($i<pg_num_rows($result))
     <form class="contact3-form validate-form" name="output1">
         <div class="slider-section">
 
-          <label for="rate1">Please rate your relationship with your team: <span id="status1"></span></label><br>
+          <label for="rate1">Please rate your relationship with your team: <?php $row['rate1'] ?><span id="status1"></span></label><br>
           <p><input type="range" min="1" max="5" name="rate1" id="rate1" value=<?php $row['rate1'] ?>></p>
 
-          <label for="rate2">Please rate your relationship with your chapter lead: <span id="status2"></span></label><br>
+          <label for="rate2">Please rate your relationship with your chapter lead: <?php $row['rate2'] ?><span id="status2"></span></label><br>
           <p><input type="range" min="1" max="5" name="rate2" id="rate2" value=<?php $row['rate2'] ?>></p>
 
           <label for="rate3">Do you have all the resources that you needed? <span id="status3"></span></label><br>
