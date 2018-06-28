@@ -62,6 +62,7 @@ pg_close($con);
 		var ctx = createCanvas("graphDiv1");
 
 		var graph = new BarGraph(ctx);
+        var number1 = <?php echo $value1?>
 		graph.maxValue = 5;
 		graph.margin = 2;
         graph.width = 450;
@@ -69,7 +70,7 @@ pg_close($con);
 		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
 		graph.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4", "Box1-Yes", "Box1-No"];
 		setInterval(function () {
-			graph.update([5, 5, 5, 5, 5, 5]);
+			graph.update([number1, 5, 5, 5, 5, 5]);
 		}, 1000);
 
 	}());</script>
