@@ -106,7 +106,7 @@
 				   <div class="container-contact3-form-btn">
              <input type="submit">
            </div>
-           <?php include "Website/db_files/sqlite-form-database.php" ?>
+           <?php include "Website/db_files/sqlite-form-database.php"; ?>
         </form>
     </div>
 </body>
