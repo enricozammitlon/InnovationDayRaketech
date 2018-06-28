@@ -62,7 +62,7 @@ pg_close($con);
 		var ctx = createCanvas("graphDiv1");
 
 		var graph = new BarGraph(ctx);
-        var number1 = <?php echo $value1?>
+        var number1 = <?php echo $value1?>;
 		graph.maxValue = 5;
 		graph.margin = 2;
         graph.width = 450;
