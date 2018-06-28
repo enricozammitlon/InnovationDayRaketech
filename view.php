@@ -46,14 +46,14 @@ pg_close($con);
 		var ctx = createCanvas("graphDiv1");
 		
 		var graph = new BarGraph(ctx);
-		graph.maxValue = 30;
+		graph.maxValue = 5;
 		graph.margin = 2;
         graph.width = 450;
 		graph.height = 150;
 		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
 		graph.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4", "Box1-Yes", "Box1-No"];
 		setInterval(function () {
-			graph.update([5, 5, 5, 5, Math.random() * 30, Math.random() * 30]);
+			graph.update([5, 5, 5, 5, 5, 5]);
 		}, 1000);
 
 	}());</script>
