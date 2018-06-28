@@ -4,23 +4,11 @@
 		<div class="container-contact3">
 			<div class="wrap-contact3">
 
-        <form action="action.php" method="post">
+        <form class="contact3-form validate-form" method="post" action="sqlite-form-database.php" name="form1" >
           <span class="contact3-form-title">
             Stay Interview
           </span>
 
-         <p>Your name: <input type="text" name="name" /></p>
-         <p>Your age: <input type="text" name="age" /></p>
-        <!-- <p><input type="submit" /></p>-->
-         <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">Submit7</button>
-        </form>
-
-<!--
-				<form class="contact3-form validate-form">
-
-
-
-        <form method="post" action="sqlite-form-database.php" name="form1" >
           <div class="wrap-input3">
             <input class="input3" type="text" name="emp_id"></p>
           </div>
@@ -118,10 +106,10 @@
              <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">Submit7</button>
              <input type="submit">
            </div>
-           <?php //include "Website/db_files/sqlite-form-database.php"; ?>
         </form>
--->
+      </div>
     </div>
+  </div>
 </body>
 
 <script>
