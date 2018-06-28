@@ -9,8 +9,9 @@
           </span>
 
         <form method="POST" action="sqlite-form-database.php" name="form1" >
-
-            <input type="text" name="emp_id" id="emp_id" placeholder="Insert Your ID Here" required></p>
+          <div class="wrap-input3 validate-input">
+            <input class="input3" type="text" name="emp_id" id="emp_id" placeholder="Insert Your ID Here" required></p>
+          </div>
 
             <div class="slider-section">
               <label for="rate1">Please rate your relationship with your team:</label><br>
