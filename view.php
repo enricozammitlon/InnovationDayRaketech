@@ -26,7 +26,7 @@ pg_close($con);
     <body>
 	<div id="graphDiv1"></div>
 	<br />
-	<div id="graphDiv2"></div>
+	<div id="graphDiv2">
 	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
 	<script src="resources/js/html5-canvas-bar-graph.js"></script>
 	<script>(function () {
@@ -56,6 +56,6 @@ pg_close($con);
 			graph.update([5, 5, 5, 5, 5, 5]);
 		}, 1000);
 
-	}());</script>
+	}());</script></div>
 </body>
  <?php include 'footer.php' ?>
