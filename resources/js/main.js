@@ -13,9 +13,9 @@
             else {
                 $(this).removeClass('has-val');
             }
-        })    
+        })
     })
-            
+
 
     /*==================================================================
     [ Chose Radio ]*/
@@ -30,9 +30,9 @@
             $('.input3-select').slideDown(300);
         }
     });
-        
-  
-    
+
+
+
     /*==================================================================
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
@@ -80,7 +80,15 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
+
+
 
 })(jQuery);
+
+$(document).ready(function() {
+  $('#ex1').slider({
+    formatter: function(value) {
+      return 'Current value: ' + value;
+    }
+  });
+});

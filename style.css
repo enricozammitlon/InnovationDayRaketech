@@ -53,3 +53,7 @@
     padding-right: 30%;
     text-align: justify;
 }
+
+#ex1Slider .slider-selection {
+  background: #BABABA;
+}
