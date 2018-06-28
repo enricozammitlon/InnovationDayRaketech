@@ -32,6 +32,7 @@ echo '<p>Database table created with columns:</p>';
 echo "<p>$columns</p>";
 echo '<p><b>Adding example data to the database table...</b></p>';
 
+/*
 $sql="INSERT INTO form_data VALUES (1,'ABC123', 1, 1, 1, 1, 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 1, 'text')";
 pg_query($con, $sql) or die('Add data failed');
 
@@ -45,6 +46,7 @@ $row = pg_fetch_row($rs);
 echo $row[0] . "\n";
 
 echo '</pre>';
+*/
 pg_close($con);
 
 ?>
