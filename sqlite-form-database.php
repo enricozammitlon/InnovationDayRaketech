@@ -42,7 +42,7 @@ error_reporting(E_ALL);
     //$sql="INSERT INTO $mytable VALUES ($id,$emp_id, $rate1, $rate2, $rate3, $rate4, $q1, $q2, $q3, $q4, $q5, $q6, $q7, $q8,$box1, $q9)";
     $sql1 = "INSERT INTO $mytable VALUES '" . $id . "','" . $emp_id . "','" . $rate1 . "','" . $rate2 . "','" . $rate3 . "','" . $rate4 . "','" . $q1 . "','" .$q2."";
     $sql2= ""','" . $q3 . "','" . $q4 . "','" . $q5 . "','" . $q6 . "','" . $q7 . "','" . $q8 . "','" . $box1 . "','" . $q9 . "';";
-    $sql=$sql1+$sql2;
+    $sql=$sql1 .' ' . $sql2;
     pg_query($con, $sql) or die('Insert values into table failed');
     pg_close($con);
 
