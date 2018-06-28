@@ -51,7 +51,7 @@ if(isset($_POST['submit'])) {
     <html>
     <body>
 
-    Welcome <?php echo $_POST['emp_id']; ?><br>
+    Welcome <?php echo "$_POST['emp_id']"; ?><br>
     </body>
     </html> "
     echo "<p>Form is empty</p>";<?php
