@@ -51,7 +51,7 @@ pg_close($con);
 		graph.maxValue = 5;
 		graph.margin = 2;
         graph.width = 450;
-		graph.height = 150;
+		graph.height = 300;
 		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
 		graph.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4", "Box1-Yes", "Box1-No"];
 		setInterval(function () {
