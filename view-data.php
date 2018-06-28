@@ -21,6 +21,7 @@ foreach ($_POST as $key => $value)
 }
 
 $emp_id = $webdata['emp_id'];
+echo $emp_id;
 
 $result=pg_query_params($con,"SELECT * FROM form_data WHERE emp_id = $1", Array($emp_id)) or die('Insert values into table failed');
 echo $result;
