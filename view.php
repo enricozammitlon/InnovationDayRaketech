@@ -23,9 +23,7 @@ $i=0;
 pg_close($con);
 
 ?>
-    <body>
-	<div id="graphDiv1"></div>
-	<br />
+<body>
 	<div id="graphDiv2"></div>
 	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
 	<script src="resources/js/html5-canvas-bar-graph.js"></script>
@@ -53,19 +51,8 @@ pg_close($con);
 		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
 		graph.xAxisLabelArr = ["North", "East", "West", "South", "Test"];
 		setInterval(function () {
-			graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
+			graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
 		}, 1000);
-		
-		var ctx2 = createCanvas("graphDiv2");
-		
-		var graph2 = new BarGraph(ctx2);
-		graph2.margin = 2;
-		graph2.width = 450;
-		graph2.height = 150;
-		graph2.xAxisLabelArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"];
-		setInterval(function () {
-			graph2.update([Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20]);
-		}, 1500);
 
 	}());</script>
 </body>
