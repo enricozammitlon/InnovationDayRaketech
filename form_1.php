@@ -102,7 +102,7 @@
             </div>
 -->
 				   <div class="container-contact3-form-btn">
-             <button class="contact3-form-btn" id="submit" type="submit" name="submit">Submit2</button>
+             <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">Submit2</button>
            </div>
            <?php include "Website/db_files/sqlite-form-database.php" ?>
         </form>
