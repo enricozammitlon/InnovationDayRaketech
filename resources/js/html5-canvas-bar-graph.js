@@ -128,7 +128,7 @@ function BarGraph(ctx) {
 			// Create gradient
 			gradient = ctx.createLinearGradient(0, 0, 0, graphAreaHeight);
 			gradient.addColorStop(1-ratio, that.colors[i % that.colors.length]);
-			gradient.addColorStop(1, "#ffffff");
+			gradient.addColorStop(1, "#7CFC00");
 
 			ctx.fillStyle = gradient;
 			// Fill rectangle with gradient
