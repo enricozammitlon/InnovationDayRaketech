@@ -32,7 +32,9 @@ pg_close($con);
 	<br />
 	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
 	<script src="resources/js/html5-canvas-bar-graph.js"></script>
-	<script>(function () {
+	<script>
+    var number1 = <?php echo $value1 ?>    
+    (function () {
 	
 		function createCanvas(divName) {
 			
@@ -56,7 +58,7 @@ pg_close($con);
 		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
 		graph.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4", "Box1-Yes", "Box1-No"];
 		setInterval(function () {
-			graph.update([<?php $value1 ?>, 5, 5, 5, 5, 5]);
+			graph.update([number1, 5, 5, 5, 5, 5]);
 		}, 1000);
 
 	}());</script>
