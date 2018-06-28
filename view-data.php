@@ -34,7 +34,6 @@ $row=pg_fetch_array($result);
 <div class="bg-contact3">
 <div class="container-contact3">
 <div class="wrap-contact3">
-    <form class="contact3-form validate-form" name="output1">
         <div class="slider-section">
 
           <label for="rate1">Please rate your relationship with your team: <span id="status1"></span> <?php echo $row['rate1'] ?> </label><br>
@@ -122,7 +121,6 @@ $row=pg_fetch_array($result);
             </div>
           </div>
         </div>
-    </form>
 </div>
 </div>
 </div>
