@@ -1,6 +1,6 @@
 <?php include 'header.html' ?>
 <body>
-  <div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+  <div class="bg-contact3" style="background-image: url('resources/images/bg-01.jpg');">
 		<div class="container-contact3">
 			<div class="wrap-contact3">
 				<form class="contact3-form validate-form">
@@ -82,7 +82,7 @@
             </div>
 
 				   <div class="container-contact3-form-btn">
-             <input type="submit" id="submit" name="submit" value="SUBMIT">
+             <button class="contact3-form-btn" id="submit" name="submit" value="SUBMIT"></button>
            </div>
 
         </form>
