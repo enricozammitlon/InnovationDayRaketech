@@ -28,7 +28,7 @@ pg_close($con);
 	<br />
 	<div id="graphDiv2"></div>
 	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
-	<script src="html5-canvas-bar-graph.js"></script>
+	<script src="resources/js/html5-canvas-bar-graph.js"></script>
 	<script>(function () {
 	
 		function createCanvas(divName) {
