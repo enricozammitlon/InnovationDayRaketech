@@ -23,9 +23,9 @@ $i=0;
 pg_close($con);
 
 ?>
-    <body>
+<body>
     <div class="graph-content">
-        <h2>Leave Interview Average Rating Data</h2>
+        <span class="contact3-form-title">Leave Interview Average Rating Data</span>
         <div id="graphDiv1"></div>
     </div>
 	<br />
@@ -59,5 +59,21 @@ pg_close($con);
 		}, 1000);
 
 	}());</script>
+        
+    <div class="bg-contact3">
+    <div class="container-contact3">
+    <div class="wrap-cotnact3">
+        <form class="contact3-form validate-form" method="post" action="website/db_files/view-data.php" name="view1">
+
+            <label for="emp_id" class="contact3-form-title">Input Employee ID Here:</label>
+            <div class="container-contact3-form-btn">
+                 <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">View Submitted Form</button>
+            </div>
+
+        </form>
+    </div>
+    </div>
+    </div>
+    
 </body>
  <?php include 'footer.php' ?>
