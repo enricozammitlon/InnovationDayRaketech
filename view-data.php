@@ -31,6 +31,7 @@ while ($i<pg_num_rows($result))
 {
 */
 $row=pg_fetch_array($result);
+echo $row;
 
     /*echo $row["emp_id"];
     $i++;
@@ -44,7 +45,7 @@ $row=pg_fetch_array($result);
         <div class="slider-section">
 
           <label for="rate1">Please rate your relationship with your team: <span id="status1"></span> <?php echo $row['rate1'] ?> </label><br>
-          <p><input type="range" min="1" max="5" name="rate1" id="rate1" value=<?php $row['rate1'] ?> readonly></p>
+          <p><input type="range" min="1" max="5" name="rate1" id="rate1" readonly value=<?php $row['rate1'] ?> ></p>
 
           <label for="rate2">Please rate your relationship with your chapter lead: <?php $row['rate2'] ?><span id="status2"></span></label><br>
           <p><input type="range" min="1" max="5" name="rate2" id="rate2" value=<?php $row['rate2'] ?> readonly></p>
