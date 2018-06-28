@@ -3,16 +3,27 @@
   <div class="bg-contact3">
 		<div class="container-contact3">
 			<div class="wrap-contact3">
-				<form class="contact3-form validate-form">
-					<span class="contact3-form-title">
+
+        <form action="action.php" method="post">
+          <span class="contact3-form-title">
             Stay Interview
           </span>
+
+         <p>Your name: <input type="text" name="name" /></p>
+         <p>Your age: <input type="text" name="age" /></p>
+         <p><input type="submit" /></p>
+        </form>
+
+<!--  
+				<form class="contact3-form validate-form">
+
+
 
         <form method="post" action="sqlite-form-database.php" name="form1" >
           <div class="wrap-input3">
             <input class="input3" type="text" name="emp_id"></p>
           </div>
-<!--
+
             <div class="slider-section">
 
               <label for="rate1">Please rate your relationship with your team: <span id="status1"></span></p></label><br>
@@ -100,14 +111,15 @@
                 </div>
               </div>
             </div>
--->
+
 
 				   <div class="container-contact3-form-btn">
              <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">Submit7</button>
-             <!--<input type="submit">-->
+             <input type="submit">
            </div>
            <?php //include "Website/db_files/sqlite-form-database.php"; ?>
         </form>
+-->
     </div>
 </body>
 
