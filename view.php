@@ -16,13 +16,20 @@ $value2 = 2;
 $value3 = 1;
 $value4 = 3;
 
-$i=0;
-$numberArray = array(1, 2);
-foreach($numberArray as $i => $item) {
-    echo $numberArray[$i];
-    // $array[$i] is same as $item
-}
-
+//$total = 0;
+//$i=0;
+//  while ($i<pg_num_rows($result))
+//  {
+//      $row=pg_fetch_array($result);
+//      echo $row["rate1"];
+//      $i++;
+//  }
+//$numberArray1 = array(1, 2);
+//foreach($numberArray as $i => $item) {
+//    echo $numberArray[$i];
+//    
+//}
+////--------------------------
 $i=0;
   while ($i<pg_num_rows($result))
   {
@@ -73,7 +80,7 @@ pg_close($con);
     <div class="bg-contact3">
     <div class="container-contact3">
     <div class="wrap-contact3">
-       <form class="contact3-form validate-form" method="post" action="website/db_files/view-data.php" name="input2">
+       <form class="contact3-form validate-form" method="post" action="view-data.php" name="input2">
            <span class="contact3-form-title">View Forms</span>
            <div class="wrap-input3">
                <p><input class="input3" type="text" name="emp_id" placeholder="Insert Employee ID Here"></p>
