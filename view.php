@@ -48,6 +48,8 @@ pg_close($con);
 		var graph = new BarGraph(ctx);
 		graph.maxValue = 30;
 		graph.margin = 2;
+        graph2.width = 450;
+		graph2.height = 150;
 		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
 		graph.xAxisLabelArr = ["North", "East", "West", "South", "Test"];
 		setInterval(function () {
