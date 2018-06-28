@@ -53,8 +53,8 @@ pg_close($con);
 		graph.colors = ["#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00", "#7CFC00"];
 		graph.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4", "Box1-Yes", "Box1-No"];
 		setInterval(function () {
-			graph.update([5, 5, 5, 5, 5, 5]);
-		}, 100000);
+			graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
+		}, 1000);
 
 	}());</script>
 </body>
