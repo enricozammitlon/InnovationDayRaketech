@@ -74,7 +74,13 @@ pg_close($con);
             </div>
             <div id="generated-form"></div>          
         </form>
-        
+    </div>
+    </div>
+    </div>
+    
+    <div class="bg-contact3">
+    <div class="container-contact3">
+    <div class="wrap-contact3">
         <form class="contact3-form validate-form" name="output1">
             <div class="slider-section">
 
@@ -163,8 +169,7 @@ pg_close($con);
                 </div>
               </div>
             </div>
-        </form>
-        
+        </form>   
     </div>
     </div>
     </div>
