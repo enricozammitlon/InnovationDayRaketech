@@ -18,13 +18,9 @@ $value4 = 3;
 
 $i=0;
 $numberArray = array(1, 2);
-//  while ($i<pg_num_rows($result))
-//  {
-//      $row=pg_fetch_array($result);
-//      array_push($numberArray, $row["rate1"]);
-//      $i++;
-//  }
-echo $numberArray;
+foreach($numberArray['data'] as $result) {
+    echo $numberArray['type'];
+}
 
 $i=0;
   while ($i<pg_num_rows($result))
