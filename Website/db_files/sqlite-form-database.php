@@ -20,7 +20,7 @@ if(!empty($_POST)){
 
     $sql="INSERT INTO $mytable VALUES ($id,$emp_id, $rate1, $rate2, $rate3, $rate4, $q1, $q2, $q3, $q4, $q5, $q6, $q7, $q8,$box1, $q9)";
 
-    $id = $webdata['id'];
+    $id = 5;
     $emp_id = $webdata['emp_id'];
     $rate1 = $webdata['rate1'];
     $rate2 = $webdata['rate2'];
