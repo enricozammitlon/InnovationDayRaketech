@@ -12,7 +12,7 @@
           <div class="wrap-input3 validate-input">
             <input class="input3" type="text" name="emp_id" id="emp_id" placeholder="Insert Your ID Here" required></p>
           </div>
-
+<!--
             <div class="slider-section">
 
               <label for="rate1">Please rate your relationship with your team: <span id="status1"></span></p></label><br>
@@ -100,7 +100,7 @@
                 </div>
               </div>
             </div>
-
+-->
 				   <div class="container-contact3-form-btn">
              <button class="contact3-form-btn" id="submit" type=submit name="submit" value="SUBMIT">Submit</button>
            </div>
