@@ -61,13 +61,15 @@ pg_close($con);
 	}());</script>
         
     <div class="bg-contact3">
-    <div class="container-contact3">
+    <div class="container-contact3" style="min-height:70vh">
     <div class="wrap-contact3">
         <form class="contact3-form validate-form" method="post" action="website/db_files/view-data.php" name="view1">
             
-            <div class="wrap-input3 validate-input">
-                <label for="emp_id" class="contact3-form-title">Input Employee ID Here:</label>
-                <p><textarea class="input1" id="q2" cols="70" rows="10" name="q2"></textarea></p>
+            <span class="contact3-form-title">View Forms</span>
+            
+            <div class="wrap-input3">
+                <label for="emp_id">Input Employee ID Here:</label>
+                <p><input class="input3" type="text" name="emp_id" placeholder="Insert Employee ID Here"></p>
                 <span class="focus-input3"></span>
             </div>
             
