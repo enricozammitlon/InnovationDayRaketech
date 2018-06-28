@@ -18,8 +18,9 @@ $value4 = 3;
 
 $i=0;
 $numberArray = array(1, 2);
-foreach($numberArray['data'] as $result) {
-    echo $numberArray['type'];
+foreach($numberArray as $i => $item) {
+    echo $numberArray[$i];
+    // $array[$i] is same as $item
 }
 
 $i=0;
@@ -69,7 +70,23 @@ pg_close($con);
 
 	}());</script>
         
-
+    <div class="bg-contact3">
+    <div class="container-contact3">
+    <div class="wrap-contact3">
+       <form class="contact3-form validate-form" method="post" action="website/db_files/view-data.php" name="input2">
+           <span class="contact3-form-title">View Forms</span>
+           <div class="wrap-input3">
+               <p><input class="input3" type="text" name="emp_id" placeholder="Insert Employee ID Here"></p>
+               <span class="focus-input3"></span>
+           </div>
+           <div class="container-contact3-form-btn">
+                <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">View Submitted Form</button>
+           </div>
+           <div id="generated-form"></div>
+       </form>
+    </div>
+</div>
+</div>
 
 </body>
  <?php include 'footer.php' ?>
