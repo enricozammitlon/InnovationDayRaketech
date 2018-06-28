@@ -22,7 +22,7 @@ echo $row[0] . "\n";
 ?>
 <?php
 
-$columns = '"id" INTEGER PRIMARY KEY NOT NULL , "emp_id" TEXT, "rate1" INTEGER, "rate2" INTEGER, "rate3" INTEGER, "rate4" INTEGER, "q1" TEXT, "q2" TEXT, "q3" TEXT , "q4" TEXT, "q5" TEXT, "q6" TEXT, "q7" TEXT, "q8" TEXT, "box1" TEXT, "q9" TEXT';
+$columns = '"id" SERIAL PRIMARY KEY NOT NULL , "emp_id" TEXT, "rate1" INTEGER, "rate2" INTEGER, "rate3" INTEGER, "rate4" INTEGER, "q1" TEXT, "q2" TEXT, "q3" TEXT , "q4" TEXT, "q5" TEXT, "q6" TEXT, "q7" TEXT, "q8" TEXT, "box1" TEXT, "q9" TEXT';
 
 $sql = 'CREATE TABLE form_data (' . $columns . ')';
 pg_query($con, $sql) or die('Create table failed');
