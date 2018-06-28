@@ -1,7 +1,7 @@
 <?php
 
 define('ISITDAFETORUN', TRUE);
-$mytable = walk;
+$mytable = form_data;
 include 'database.php';
 echo"<p>Connected to database</p>";
 
@@ -20,12 +20,26 @@ if(!empty($_POST)){
 
     $sql="INSERT INTO $mytable VALUES ($id,$emp_id, $rate1, $rate2, $rate3, $rate4, $q1, $q2, $q3, $q4, $q5, $q6, $q7, $q8,$box1, $q9)";
 
-    $stmt = $db->prepare($sql);
-    $name = $webdata['id'];
-    $date = $webdata['date'];
-    $time = $webdata['time'];
-    $leader = $webdata['leader'];
-    $latlong = $webdata['meetingloc'];
+    $id = $webdata['id'];
+    $emp_id = $webdata['emp_id'];
+    $rate1 = $webdata['rate1'];
+    $rate2 = $webdata['rate2'];
+    $rate3 = $webdata['rate3'];
+    $rate4 = $webdata['rate4'];
+    $q1 = $webdata['q1'];
+    $q2 = $webdata['q2'];
+    $q3 = $webdata['q3'];
+    $q4 = $webdata['q4'];
+    $q5 = $webdata['q5'];
+    $q6 = $webdata['q6'];
+    $q7 = $webdata['q7'];
+    $q8 = $webdata['q8'];
+    $q9 = $webdata['q9'];
+    $box1 = $webdata['box1'];
+
+    pg_query($con, $sql) or die('Insert values into table failed');
+    pg_close($con);
+
 
 }else{
     echo "<p>Form is empty</p>";
