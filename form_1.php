@@ -8,7 +8,7 @@
             Stay Interview
           </span>
 
-        <form method="post" action="/sqlite-form-database.php" name="form1" >
+        <form method="post" action="https://formcreatorhr.herokuapp.com/Website/db_files/sqlite-form-database.php" name="form1" >
           <div class="wrap-input3 validate-input">
             <input class="input3" type="text" name="emp_id" id="emp_id" placeholder="Insert Your ID Here"></p>
           </div>
@@ -106,7 +106,7 @@
 				   <div class="container-contact3-form-btn">
              <input type="submit">
            </div>
-           <?php include "Website/db_files/sqlite-form-database.php"; ?>
+           <?php //include "Website/db_files/sqlite-form-database.php"; ?>
         </form>
     </div>
 </body>
