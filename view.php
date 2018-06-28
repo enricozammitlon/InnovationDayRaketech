@@ -108,7 +108,7 @@ pg_close($con);
     <div class="container-contact3">
     <div class="wrap-contact3">
        <form class="contact3-form validate-form" method="post" action="view-data.php" name="input2">
-           <span class="contact3-form-title">View Forms</span>
+           <span class="contact3-form-title">Viewww Forms</span>
            <div class="wrap-input3">
                <p><input class="input3" type="text" name="emp_id" placeholder="Insert Employee ID Here"></p>
                <span class="focus-input3"></span>
