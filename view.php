@@ -33,7 +33,7 @@ pg_close($con);
 	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
 	<script src="resources/js/html5-canvas-bar-graph.js"></script>
 	<script>
-    var number1 = <?php echo $value1 ?>    
+    var number1 = 2;  
     (function () {
 	
 		function createCanvas(divName) {
