@@ -25,7 +25,7 @@ $numberArray = array();
       array_push($numberArray, $row["rate1"]);
   }
 echo $numberArray;
-
+pg_close($con);
 
 //$sql="SELECT id, emp_id, rate1, rate2, rate3, rate4, q1, q2, q3, q4, q5, q6, q7, q8, box1, q9 FROM form_data";
 $sql="SELECT * FROM form_data";
