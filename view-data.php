@@ -10,6 +10,11 @@ $con = pg_connect("host=$host dbname=$dbname user=$user password=$password")
     or die ("Could not connect to server\n");
 echo"<p>Connected to database</p>";
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
 foreach ($_POST as $key => $value)
 {
     $webdata[$key] = $value;
@@ -37,16 +42,16 @@ $row=pg_fetch_array($result);
         <div class="slider-section">
 
           <label for="rate1">Please rate your relationship with your team: <span id="status1"></span> <?php echo $row['rate1'] ?> </label><br>
-          <p><input type="range" min="1" max="5" name="rate1" id="rate1" value=<?php $row['rate1'] ?>></p>
+          <p><input type="range" min="1" max="5" name="rate1" id="rate1" value=<?php $row['rate1'] ?> readonly></p>
 
           <label for="rate2">Please rate your relationship with your chapter lead: <?php $row['rate2'] ?><span id="status2"></span></label><br>
-          <p><input type="range" min="1" max="5" name="rate2" id="rate2" value=<?php $row['rate2'] ?>></p>
+          <p><input type="range" min="1" max="5" name="rate2" id="rate2" value=<?php $row['rate2'] ?> readonly></p>
 
           <label for="rate3">Do you have all the resources that you needed? <span id="status3"></span></label><br>
-          <p><input type="range" min="1" max="5" name="rate3" id="rate3" value=<?php $row['rate3'] ?>></p>
+          <p><input type="range" min="1" max="5" name="rate3" id="rate3" value=<?php $row['rate3'] ?> readonly></p>
 
           <label for="rate4">How would you rate the organisation? <span id="status4"></span></label><br>
-          <p><input type="range" min="1" max="5" name="rate4" id="rate4" value=<?php $row['rate4'] ?>></p>
+          <p><input type="range" min="1" max="5" name="rate4" id="rate4" value=<?php $row['rate4'] ?> readonly></p>
         </div>
 
 
