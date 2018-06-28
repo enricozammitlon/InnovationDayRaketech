@@ -28,7 +28,7 @@ while ($i<pg_num_rows($result))
 }*/
 
 
-
+?>
 <div class="bg-contact3">
 <div class="container-contact3">
 <div class="wrap-contact3">
@@ -125,5 +125,5 @@ while ($i<pg_num_rows($result))
 </div>
 </div>
 
-
-pg_close($con);
+<?php
+pg_close($con);?>
