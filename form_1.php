@@ -10,7 +10,7 @@
           </span>
 
           <div class="wrap-input3">
-            <input class="input3" type="text" name="emp_id"></p>
+            <input class="input3" type="text" name="emp_id" placeholder="Insert Your ID Here"></p>
           </div>
 
             <div class="slider-section">
@@ -104,7 +104,6 @@
 
 				   <div class="container-contact3-form-btn">
              <button class="contact3-form-btn" id="submit" type="submit" name="submit" value="Submit">Submit7</button>
-             <input type="submit">
            </div>
         </form>
       </div>
