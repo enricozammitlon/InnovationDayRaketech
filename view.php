@@ -24,9 +24,11 @@ pg_close($con);
 
 ?>
     <body>
-	<div id="graphDiv1"></div>
+    <div class="graph-content">
+        <h2>Leave Interview Average Rating Data</h2>
+        <div id="graphDiv1"></div>
+    </div>
 	<br />
-	<div id="graphDiv2">
 	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
 	<script src="resources/js/html5-canvas-bar-graph.js"></script>
 	<script>(function () {
@@ -56,6 +58,6 @@ pg_close($con);
 			graph.update([5, 5, 5, 5, 5, 5]);
 		}, 1000);
 
-	}());</script></div>
+	}());</script>
 </body>
  <?php include 'footer.php' ?>
