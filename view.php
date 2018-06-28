@@ -24,36 +24,47 @@ pg_close($con);
 
 ?>
     <body>
-        <div id="graphDiv1"></div>
-        <br />
-        <div id="graphDiv2"></div>
-        <!--[if IE]><script src="excanvas.js"></script><![endif]-->
-        <script src="resources/js/html5-canvas-bar-graph.js"></script>
-        <script>(function () {
+	<div id="graphDiv1"></div>
+	<br />
+	<div id="graphDiv2"></div>
+	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
+	<script src="html5-canvas-bar-graph.js"></script>
+	<script>(function () {
+	
+		function createCanvas(divName) {
+			
+			var div = document.getElementById(divName);
+			var canvas = document.createElement('canvas');
+			div.appendChild(canvas);
+			if (typeof G_vmlCanvasManager != 'undefined') {
+				canvas = G_vmlCanvasManager.initElement(canvas);
+			}	
+			var ctx = canvas.getContext("2d");
+			return ctx;
+		}
+		
+		var ctx = createCanvas("graphDiv1");
+		
+		var graph = new BarGraph(ctx);
+		graph.maxValue = 30;
+		graph.margin = 2;
+		graph.colors = ["#49a0d8", "#d353a0", "#ffc527", "#df4c27"];
+		graph.xAxisLabelArr = ["North", "East", "West", "South"];
+		setInterval(function () {
+			graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
+		}, 1000);
+		
+		var ctx2 = createCanvas("graphDiv2");
+		
+		var graph2 = new BarGraph(ctx2);
+		graph2.margin = 2;
+		graph2.width = 450;
+		graph2.height = 150;
+		graph2.xAxisLabelArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"];
+		setInterval(function () {
+			graph2.update([Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20]);
+		}, 1500);
 
-            function createCanvas(divName) {
-
-                var div = document.getElementById(divName);
-                var canvas = document.createElement('canvas');
-                div.appendChild(canvas);
-                if (typeof G_vmlCanvasManager != 'undefined') {
-                    canvas = G_vmlCanvasManager.initElement(canvas);
-                }	
-                var ctx = canvas.getContext("2d");
-                return ctx;
-            }
-
-            var ctx2 = createCanvas("graphDiv2");
-
-            var graph2 = new BarGraph(ctx2);
-            graph2.margin = 2;
-            graph2.width = 450;
-            graph2.height = 150;
-            graph2.xAxisLabelArr = ["Rate1", "Rate2", "Rate3", "Rate4", "Box1-Yes", "Box2-No"];
-            setInterval(function () {
-                graph2.update([Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Maths.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20, Math.random() * 20]);
-            }, 1500);
-
-        }());</script>
-    </body>
+	}());</script>
+</body>
  <?php include 'footer.php' ?>
