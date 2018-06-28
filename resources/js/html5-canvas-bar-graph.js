@@ -126,16 +126,16 @@ function BarGraph(ctx) {
 		// Draw bar color if it is large enough to be visible
 		if (barHeight > border * 2) {
 			// Create gradient
-			gradient = ctx.createLinearGradient(0, 0, 0, graphAreaHeight);
-			gradient.addColorStop(1-ratio, that.colors[i % that.colors.length]);
-			gradient.addColorStop(1, "#ffffff");
-
-			ctx.fillStyle = gradient;
-			// Fill rectangle with gradient
-			ctx.fillRect(that.margin + i * that.width / numOfBars + border,
-			  graphAreaHeight - barHeight + border,
-			  barWidth - border * 2,
-			  barHeight - border * 2);
+//			gradient = ctx.createLinearGradient(0, 0, 0, graphAreaHeight);
+//			gradient.addColorStop(1-ratio, that.colors[i % that.colors.length]);
+//			gradient.addColorStop(1, "#ffffff");
+//
+//			ctx.fillStyle = gradient;
+//			// Fill rectangle with gradient
+//			ctx.fillRect(that.margin + i * that.width / numOfBars + border,
+//			  graphAreaHeight - barHeight + border,
+//			  barWidth - border * 2,
+//			  barHeight - border * 2);
 		}
 
 		// Write bar value
